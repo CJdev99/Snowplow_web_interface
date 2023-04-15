@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Row, Col, Container, Button} from 'react-bootstrap';
 import Config from "../scripts/config.js";
-import * as Three from 'three';
+//import * as Three from 'three';
 
 class RobotState extends Component {
     state = {
@@ -61,6 +61,7 @@ class RobotState extends Component {
         });
     }
     getOrientationFromQuaternion(ros_orientation_quaternion){
+        const Three = require('three');
         var q = new Three.Quaternion(ros_orientation_quaternion.x, ros_orientation_quaternion.y, ros_orientation_quaternion.z, ros_orientation_quaternion.w);
         var euler = new Three.Euler().setFromQuaternion(q);
         return euler.z;

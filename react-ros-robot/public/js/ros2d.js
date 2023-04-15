@@ -2899,3 +2899,5 @@ var ROS2D = (function (exports, createjs, ROSLIB) {
   
   })({}, createjs, ROSLIB);
   
+  module.exports = exports;
+  
