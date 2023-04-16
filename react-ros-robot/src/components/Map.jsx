@@ -34,7 +34,7 @@ class Map extends Component {
 
 view_map(){
     const ROS3D = require("ros3d")
-    const createjs = require("createjs-module")
+    
     var viewer = new ROS3D.Viewer({
         divID : 'nav_div',
         width : 600,
