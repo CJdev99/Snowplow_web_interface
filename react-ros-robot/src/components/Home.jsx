@@ -3,6 +3,7 @@ import Connection from './Connection';
 import RobotState from './RobotState';
 import Teleoperation from './Teleoperation';
 import Map from './Map';
+import VideoStream from './VideoStream';
 import {Row, Col, Container} from 'react-bootstrap';
 
 class Home extends Component {
@@ -22,6 +23,9 @@ class Home extends Component {
                 <Row>
                     <Col>
                       <Teleoperation />
+                    </Col>
+                    <Col>
+                      <VideoStream />
                     </Col>
                     <Col>
                       <h1>MAP</h1>

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-//import {ROS2D } from 'ros2d';
-//import * as ROS2D from 'ros2d';
-import * as Three from 'three';
+
 
 import Config from '../scripts/config';
 
@@ -37,8 +35,8 @@ view_map(){
     
     var viewer = new ROS3D.Viewer({
         divID : 'nav_div',
-        width : 600,
-        height : 600,
+        width : 400,
+        height : 400,
         antialias: true,
         intensity: 1.0,
         cameraPose: {x: -1, y: 0, z: 20},
@@ -68,7 +66,7 @@ view_map(){
 }
     render() { 
         return (
-            <div id="nav_div"> Viewer </div>
+            <div id="nav_div"> </div>
         );
     }
 }
