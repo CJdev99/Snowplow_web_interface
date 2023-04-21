@@ -25,6 +25,7 @@ class Home extends Component {
                       <Teleoperation />
                     </Col>
                     <Col>
+                      <h1>front view:</h1>
                       <VideoStream />
                     </Col>
                     <Col>
