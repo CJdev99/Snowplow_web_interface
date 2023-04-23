@@ -22,14 +22,14 @@ class VideoStream extends React.Component {
       this.setState({ error });
       setTimeout(() => {
         this.fetchImage();
-      }, 5000);
+      }, 500);
     }
   }
 
   componentDidMount() {
     this.interval = setInterval(() => {
       this.fetchImage();
-    }, 1000);
+    }, 10);
   }
 
   componentWillUnmount() {
@@ -41,7 +41,7 @@ class VideoStream extends React.Component {
     return (
       <div>
         {error && <p>Error: {error.message}</p>}
-        <img src={imageSrc} alt="camera stream" onError={(e) => { e.target.src = placeholderImage }} />
+        <img style={{ width: "100%", height: "100%" }} src={imageSrc} alt="camera stream" onError={(e) => { e.target.src = placeholderImage }} />
       </div>
     );
   }
